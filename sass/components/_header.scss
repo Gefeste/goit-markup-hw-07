@@ -1,68 +1,68 @@
 .header-list {
-    display: flex;
-    margin-left: 93px;
-    gap: 50px;
+  display: flex;
+  margin-left: 93px;
+  gap: 50px;
 }
 
 .header-container {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid #ececec;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
 }
 
 .nav {
-    display: flex;
-    align-items: center;
-    margin-right: auto;
+  display: flex;
+  align-items: center;
+  margin-right: auto;
 }
 
 .header-group {
-    display: flex;
-    gap: 30px;
+  display: flex;
+  gap: 30px;
 }
 
 .nav-link-logo {
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
 }
 
 .nav-logo {
-    color: var(--button-color);
+  color: var(--button-color);
 }
 
 .nav-logocolor {
-    color: #000;
+  color: #000;
 }
 
 .nav-link {
-    color: var(--headline-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    display: block;
-    transition: color var(--animation);
-}
-
-.nav-link:hover,
-.nav-link:focus {
+  color: var(--headline-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+  transition: color var(--animation);
+  &:hover,
+  &:focus {
     color: var(--button-color);
+  }
 }
 
 .current {
-    color: var(--button-color);
+  color: var(--button-color);
 }
 
 .current-item {
-    position: relative;
+  position: relative;
 }
 
-.nav-link-current::after {
+.nav-link-current {
+  &::after {
     content: '';
     display: inline-block;
 
@@ -74,24 +74,24 @@
     height: 4px;
     background-color: var(--button-color);
     border-radius: 2px;
+  }
 }
 
 .contact {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: var(--text-color);
-    font-family: 'Roboto';
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    fill: var(--text-color);
-    transition: color var(--animation), fill var(--animation);
-}
-
-.contact:hover,
-.contact:focus {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-color);
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  fill: var(--text-color);
+  transition: color var(--animation), fill var(--animation);
+  &:hover,
+  &:focus {
     color: var(--button-color);
     fill: var(--button-color);
+  }
 }

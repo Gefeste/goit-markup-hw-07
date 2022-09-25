@@ -3,12 +3,6 @@
     align-items: baseline;
 }
 
-footer {
-    background-color: #2f303a;
-    padding-bottom: 60px;
-    padding-top: 60px;
-}
-
 .adress-footer {
     margin-right: 75px;
 }
@@ -29,7 +23,7 @@ footer {
     color: var(--main-cl);
 }
 
-address {
+.address {
     margin-top: 20px;
 }
 
@@ -41,33 +35,40 @@ address {
     font-style: normal;
 }
 
-.footer .adress-list li {
+.adress-list {
+
+    .adress-item {
     margin-bottom: 9px;
+    }
 }
 
-.footer .adress-list li:last-child {
+.adress-list {
+
+    .adress-item:last-child {
     margin: 0;
+    }
 }
 
 .footer-map-contact {
     color: var(--main-cl);
     transition: color var(--animation);
+    &:hover,
+    &:focus {
+        color: var(--button-color);
+    }
 }
 
-.footer-map-contact:hover,
-.footer-map-contact:focus {
-    color: var(--button-color);
-}
 
 .footer-contact {
     color: rgba(255, 255, 255, 0.6);
     transition: color var(--animation);
+
+    &:hover,
+    &:focus {
+        color: var(--button-color);
+    }
 }
 
-.footer-contact:hover,
-.footer-contact:focus {
-    color: var(--button-color);
-}
 
 .social-links {
     display: flex;
@@ -87,11 +88,11 @@ address {
     border-radius: 50%;
     background-color: #ffffff1a;
     transition: background-color var(--animation);
-}
 
-.social-link-footer:hover,
-.social-link-footer:focus {
-    background-color: var(--button-color);
+    &:hover,
+    &:focus {
+        background-color: var(--button-color);
+    }
 }
 
 .our-social-links {
@@ -141,13 +142,16 @@ address {
     border-radius: 4px;
 }
 
-.form-field input::placeholder {
-    font-size: 16px;
-    line-height: 1.25;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+.form-field {
+
+    input::placeholder {
+        font-size: 16px;
+        line-height: 1.25;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+ }
 }
 
 .tg-btn {
@@ -170,6 +174,9 @@ address {
     cursor: pointer;
     gap: 10px;
 }
+
+
+
 
 .tg-icon {
     position: absolute;

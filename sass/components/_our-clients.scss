@@ -22,16 +22,22 @@
     border: 1px solid #afb1b8;
     border-radius: 4px;
     transition: border-color var(--animation);
+
+    &:hover,
+    &:focus {
+        border: 1px solid var(--button-color);
+    }
 }
 
-.our-clients__link:hover,
-.our-clients__link:focus {
-    border: 1px solid var(--button-color);
-}
 
-.our-clients__link:hover .our-clients__logo,
-.our-clients__link:focus .our-clients__logo {
+
+.our-clients__link,
+.our-clients__link {
+
+    &:hover .our-clients__logo,
+    &:focus .our-clients__logo {
     fill: var(--button-color);
+    }
 }
 
 .our-clients__logo {

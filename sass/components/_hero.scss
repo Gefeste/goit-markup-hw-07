@@ -33,9 +33,8 @@
     width: 216px;
     height: 50px;
     transition: background-color var(--animation);
-}
-
-.button-order:hover,
-.button-order:focus {
-    background-color: #188ce8;
+    &:hover,
+    &:focus {
+        background-color: #188ce8;
+    }
 }
